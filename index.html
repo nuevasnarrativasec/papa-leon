@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Para que Google no indexe esta landing-->
+    <meta name="googlebot" content="noindex" />
+    <meta name="googlebot-news" content="nosnippet" />
+    <meta name="robots" content="noindex, nofollow" />
+    <!---->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papa Leon XIV</title>
+
+    <link rel="stylesheet" href="./css/style.css?v5">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+
+    <style>   
+        .ads__zocalo,
+        .ribbon__container,
+        .grippy-host,     
+        .skin-template-model0,
+        #gpt_zocalo, 
+        #clever-45754-sticky-footer-shadow,
+        #browsi_wrapper_0_ai_1_rc_0,
+        #browsi_wrapper_1_ai_1_rc_0,
+        #browsi_wrapper_2_ai_1_rc_0,
+        #browsi_wrapper_3_ai_1_rc_0,
+        #browsi_wrapper_4_ai_1_rc_0,
+        #browsi_wrapper_5_ai_1_rc_0,
+        #browsi_wrapper_6_ai_1_rc_0,
+        #browsi_wrapper_7_ai_1_rc_0,
+        #browsi_wrapper_8_ai_1_rc_0,
+        #browsi_wrapper_9_ai_1_rc_0,
+        #browsi_wrapper_10_ai_1_rc_0{
+            display: none !important;
+            height: 0 !important;
+        }  
+        .nav-d__main-scroll.scrolled{
+            z-index: 9999;
+        }
+
+        /** ARC **/
+
+        .header-comercio{
+            background: transparent;
+            position: relative;
+            z-index: 1;
+        }
+    </style> 
+
+</head>
+<body>
+
+    <div class="header-comercio">
+        <div class="ctn-header-comercio">                
+            <div id="social">
+                <button id="fb" class="sharer button" data-sharer="facebook" data-hashtag="" data-url="#">Facebook</button>
+
+                <button id="wst" class="sharer button" data-sharer="whatsapp" data-title="Mundo | El Comercio" data-url="#">Whatsapp</button>
+
+                <button id="tw" class="sharer button" data-sharer="twitter" data-title="Mundo | El Comercio" data-hashtags="" data-via="elcomercio_peru" data-url="#">Twitter</button>
+            </div>
+        </div>            
+    </div>
+
+    <div id="portada">
+        <img src="../img/papa.gif?v5" alt="" width="100%" class="papa-gif">
+        <img src="../img/bg-sombra-portada.png" alt="" class="sombra-portada">
+        <div class="box-titulo">
+            <img src="../img/logo-comercio.png" alt="El Comercio" width="100%" class="logo-comercio">
+            <h1>papa león XIV</h1>
+            <h2>
+                El pontífice con raíces peruanas</span>
+            </h2>
+            <img src="https://nuevasnarrativasec.github.io/conclave/img/flecha-bajar.png" alt="bajar" width="100%" class="flecha-bajar">
+        </div>
+    </div>
+
+    <div id="main">
+
+        <div class="box-bajada">
+            <span class="separador"></span>
+            <h3>
+                El 10 de mayo de 2025, tras la fumata blanca, Robert Francis Prevost irrumpió en el balcón de San Pedro como León XIV y, en español, envió <span>“un saludo… a mi querida diócesis de Chiclayo”,</span> reafirmando el corazón peruano de su ministerio
+            </h3>
+            <span class="separador"></span>
+        </div>
+
+        <div class="box-texto">
+            <span class="separador"></span>
+            <h4>Camino al Pontificado</h4>
+            <p>
+                Nació en Chicago ( 1955 ). Misionero agustino en Chulucanas en 1985, formador en Trujillo desde 1988, obispo de Chiclayo a partir del 26 de setiembre de 2015 —año en que también obtuvo la nacionalidad peruana— y administrador apostólico del Callao en plena pandemia ( 2020-2021 ); cada destino consolidó un liderazgo cercano a las periferias que desembocó en su elección pontificia de 2025.
+            </p>
+        </div>
+
+        <div class="timeline-container">
+
+            <img src="../img/timeline-desktop.webp" alt="" width="100%" class="timeline-desktop">
+            <img src="../img/timeline-movil.webp" alt="" width="100%" class="timeline-movil">
+            
+
+            <div class="box-leon">
+                <h5>
+                    León XIV
+                </h5>
+                <p>
+                    Tercera fumata blanca del siglo; hace su primer saludo en castellano: <span>“¡Arriba, los corazones!”</span>
+                </p>
+                <img src="../img/bg-leon.jpg" alt="papa león xvi" width="100%">
+            </div>
+        </div>
+
+        <div class="box-texto">
+            <span class="separador"></span>
+            <h4>Sus huellas en Chiclayo</h4>
+            <p>
+                La capital lambayecana recuerda sus madrugadas en la Catedral de Santa María, el comedor parroquial reabierto para servir 400 raciones diarias, la mesa 3 del restaurante Trébol donde pedía frito chiclayano y café pasado, sus misas en el barrio Eten por el Milagro Eucarístico y los partidos de tenis en el Jockey Club; gestos cotidianos que, según los feligreses, lo convirtieron en “un pastor que rompía esquemas con sencillez y servicio”.
+            </p>
+        </div>
+
+        <div class="main-map">
+            <div id="map"></div>
+            <div class="menu-container">
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+                <div class="menu" id="menu"></div>
+            </div>   
+        </div>
+
+        <div class="box-texto">
+            <span class="separador"></span>
+            <h4>Testimonios</h4>
+            <p>
+                Confirmaciones escolares, ferias patronales, congresos familiares y procesiones revelan a un obispo que confiaba responsabilidades a laicos y jóvenes: “caminó con nosotros en sinodalidad” dice un catequista; “su humildad nos marcó” añaden quienes lo vieron bendecir acólitos y llevar firmas a Roma para que Eten sea Ciudad Eucarística, un mosaico de recuerdos que subraya su cercanía pastoral.
+            </p>
+        </div>
+
+        <div class="main-fotos-testimonios">
+            <div class="box-testimonio" id="testimonio-1">
+                <img src="../img/bg-testimonio-1.jpg" alt="" width="100%">
+                <div class="box-texto-testimonio">
+                    <h5>
+                        colegio san agustín de chiclayo
+                        <span>
+                            noviembre 2017
+                        </span>
+                    </h5>
+                    <p>
+                        “Confirmación del cuarto año de secundaria donde participaron diversos alumnos. En la tan esperada ceremonia participó el actual papa León XIV”.
+                    </p>
+                    <h6>
+                        daniel de la rosa
+                    </h6>
+                </div>
+            </div>
+            <div class="box-testimonio" id="testimonio-2">
+                <img src="../img/bg-testimonio-2.jpg" alt="" width="100%">
+                <div class="box-texto-testimonio">
+                    <h5>
+                        parroquia santa ana de tumán
+                        <span>
+                            noviembre 2022
+                        </span>
+                    </h5>
+                    <p>
+                       “Confirmación celebrada por el obispo, con el párroco Monteza, el vicario José Echeandía y acólitos que retomamos nuestro servicio”.
+                    </p>
+                    <h6>
+                        jorge castillo
+                    </h6>
+                </div>
+            </div>
+            <div class="box-testimonio horizontal" id="testimonio-3">                
+                <div class="box-texto-testimonio">
+                    <h5>
+                        colegio manuel pardo de chiclayo
+                        <span>
+                            setiembre 2018
+                        </span>
+                    </h5>
+                    <p>
+                        “Conocí al ahora papa León XIV durante mi confirmación. Su humildad y calidez me dejaron una profunda impresión”.
+                    </p>
+                    <h6>
+                        christian mondragón
+                    </h6>
+                </div>
+                <img src="../img/bg-testimonio-3.jpg" alt="" width="100%">
+            </div>
+            <div class="box-testimonio" id="testimonio-4"> 
+                <img src="../img/bg-testimonio-4.jpg" alt="" width="100%">
+                <div class="box-texto-testimonio">
+                    <h5>
+                        chiclayo
+                        <span>
+                            mayo 2015
+                        </span>
+                    </h5>
+                    <p>
+                        “Con el coro Virgen de Fátima cantábamos en las misas que él celebraba. La foto fue tomada en un Congreso de Familias”.
+                    </p>
+                    <h6>
+                        romina bustamante
+                    </h6>
+                </div>
+            </div>
+            <div class="box-testimonio" id="testimonio-5"> 
+                <img src="../img/bg-testimonio-5.jpg" alt="" width="100%">
+                <div class="box-texto-testimonio">
+                    <h5>
+                        callao
+                        <span>
+                            diciembre 2020
+                        </span>
+                    </h5>
+                    <p>
+                        “Foto de mi confirmación durante la pandemia del COVID-19. Monseñor luce con un protector facial. Era obispo de Chiclayo y administrador apostólico del Callao”.
+                    </p>
+                    <h6>
+                        elías cánepa
+                    </h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-texto">
+            <span class="separador"></span>
+            <h4>¿Por qué eligió el nombre de León XIV?</h4>
+            <p>
+                Eligió llamarse León por su compromiso con las causas sociales en un tiempo de revolución tecnológica y mostró un liderazgo de estilo sobrio que conjuga la tradición eclesial con la urgencia de “defender a los débiles” en la economía, la guerra y la migración.
+            </p>
+        </div>
+        <img src="../img/bg-nombre.jpg" alt="" width="100%" class="bg">
+
+        <div class="box-texto">
+            <span class="separador"></span>
+            <h4>Los retos del papa León XIV en esta nueva era</h4>
+            <p>
+                Con la población católica mundial estabilizada en 17,5 % en 2025, el pontífice asume prioridades claras: tolerancia cero a los abusos y centros de escucha para víctimas, impulso al protagonismo femenino en los dicasterios, defensa de la doctrina frente a las uniones del mismo sexo y transparencia en la gestión, todo bajo la premisa de hacer de la Iglesia “un espacio seguro y corresponsable”.
+            </p>
+        </div>
+        <img src="../img/bg-retos.jpg" alt="" width="100%" class="bg-retos">
+
+        <div class="box-texto">
+            <span class="separador"></span>
+            <h4>Júbilo mundial</h4>
+            <p>
+                La imagen de León XIV iluminó al Cristo Redentor de Río; artesanos napolitanos modelaron su fi£gura en terracota; la catedral de São Paulo celebró una homilía especial; escolares de Vermont siguieron su discurso en directo y el marcador de los Chicago White Sox lo homenajeó en su ciudad natal, una ola de entusiasmo que subraya la proyección global de un papa “con corazón peruano”.
+            </p>
+        </div>
+
+        <div class="box-main-galeria">
+            <div class="foto-galeria" id="foto-galeria-1">
+                <img src="../img/bg-galeria-1.jpg" alt="" width="100%">
+                <p>
+                    La catedral de la ciudad brasileña de Sao Paulo celebró el viernes una homilía en honor al inicio del pontificado de León XIV. 
+                    <br>
+                    Colocaron una imagen del nuevo papa para que los fieles lo puedan apreciar.
+                </p>
+            </div>
+            <div class="foto-galeria medium" id="foto-galeria-2">
+                <img src="../img/bg-galeria-2.jpg" alt="" width="100%">
+                <p>
+                   La casa donde el Santo Padre pasó sus primeros años, hasta entrar en el seminario a los 14, se ha convertido en solo dos días en un sitio de peregrinaje. Fieles y curiosos siguen llegando a la calle 141 de Dolton, en Chicago.
+                </p>
+            </div>
+            <div class="foto-galeria medium" id="foto-galeria-3">
+                <img src="../img/bg-galeria-3.jpg" alt="" width="100%">
+                <p>
+                    El artista Genny di Virgilio pinta una estatuilla de terracota que representa al recién elegido papa en la Via San Gregorio Armeno, también conocida como Calle de los Belenes, en Nápoles, Italia.
+                </p>
+            </div>
+            <div class="foto-galeria medium" id="foto-galeria-4">
+                <img src="../img/bg-galeria-4.jpg" alt="" width="100%">
+            </div>
+            <div class="foto-galeria medium" id="foto-galeria-5">                
+                <p>
+                   La casa donde el Santo Padre pasó sus primeros años, hasta entrar en el seminario a los 14, se ha convertido en solo dos días en un sitio de peregrinaje. Fieles y curiosos siguen llegando a la calle 141 de Dolton, en Chicago
+                </p>
+                <img src="../img/bg-galeria-5.jpg" alt="" width="100%">
+                <p>
+                    Alumnos de la escuela católica St. Michael, en Brattleboro, Vermont, EE.UU., ven a través de una laptop el primer discurso de León XIV.
+                </p>
+            </div>
+            <div class="foto-galeria medium" id="foto-galeria-6">
+                <img src="../img/bg-galeria-6.jpg" alt="" width="100%">
+                <p>
+                    La celebración en la Plaza de San Pedro tras revelarse quién era el nuevo papa se dio en medio de gritos, aplausos y expresiones de extrema emoción.
+                </p>
+            </div>
+            <div class="foto-galeria medium" id="foto-galeria-7">
+                <img src="../img/bg-galeria-7.jpg" alt="" width="100%">
+                <p>
+                    Los jugadores de los Chicago White Sox caminan por el campo mientras el marcador honra al papa León XIV antes de un partido de béisbol en Chicago, su ciudad natal.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <ul class="creditos">
+        <li>
+            <p>
+                <span>
+                    Textos:
+                </span>
+                Redacción EC
+            </p>
+        </li>
+        <li>
+            <p>
+                <span>
+                    Realización:
+                </span>
+                Nuevas Narrativas EC
+            </p>
+        </li>
+    </ul>
+
+   
+     
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+
+    <!-- compartir -->
+    <script>
+        function shareUrl(event) {
+            const button = event.target;
+            const url = button.getAttribute('data-url');
+            
+            const sharer = button.getAttribute('data-sharer');
+            let shareUrl = '';
+
+            switch (sharer) {
+            case 'facebook':
+                const fbHashtag = button.getAttribute('data-hashtag') || '';
+                shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&hashtag=${encodeURIComponent(fbHashtag)}`;
+                break;
+                
+            case 'whatsapp':
+                const whatsappTitle = button.getAttribute('data-title');
+                shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(whatsappTitle + ' ' + url)}`;
+                break;
+                
+            case 'twitter':
+                const twitterTitle = button.getAttribute('data-title');
+                const twitterHashtags = button.getAttribute('data-hashtags');
+                const twitterVia = button.getAttribute('data-via');
+                shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(twitterTitle)}&url=${encodeURIComponent(url)}&hashtags=${twitterHashtags}&via=${twitterVia}`;
+                break;
+            }
+
+            window.open(shareUrl, '_blank');
+        }
+
+        document.querySelectorAll('.sharer').forEach(button => {
+            button.addEventListener('click', shareUrl);
+        });
+    </script>
+
+    <!-- flecha bajar -->
+    <script>
+        $(".flecha-bajar").click(function() {
+            $('html,body').animate({
+                scrollTop: $("#main").offset().top
+            },
+            'slow');
+        });
+    </script>
+
+    <!-- mapa -->
+    <script>
+    // Inicializa el mapa
+    const map = L.map('map',{
+        scrollWheelZoom: false
+    }).setView([-6.7749172, -79.8511865], 14); // Chiclayo
+
+    var Stadia_AlidadeSmooth = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.{ext}', {
+        minZoom: 0,
+        maxZoom: 20,
+        attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        ext: 'png'
+    }).addTo(map);
+
+    // Datos de los puntos
+    const lugares = [
+        {
+            nombre: "Catedral Santa María",
+            coords: [-6.7716796, -79.8405237],
+            imagen: "https://upload.wikimedia.org/wikipedia/commons/5/5d/Catedral_de_Chiclayo.jpg",
+            descripcion: "Donde celebraba misa de 6 a. m. para estibadores; aquí prometió “una Iglesia con olor a pescado fresco”."
+        },
+        {
+            nombre: "Comedor “San Agustín”",
+            coords: [-6.7812117, -79.8782634],
+            imagen: "https://www.sanagustinchiclayo.edu.pe/wp-content/uploads/2023/08/Infraestructura-colegio-San-Agustin-Chiclayo-2023-2.webp",
+            descripcion: "Reabierto en 1990; hoy reparte 400 raciones diarias. Testimonios : “Nos devolvió la dignidad de desayunar caliente” (Sra. E. Vasquez)."
+        },
+        {
+            nombre: "Barrio Elías Aguirre",
+            coords: [-6.7714463, -79.8401435],
+            imagen: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nodqSrEwTtY4CxRrxsp3LJSMHCh1B5GM-c3OMYgizBU4zyo843TC2UWtlDTBB9MbLMpRk8QzGppWQrl2KAh_Y5OYcMzbt7t6bWwTX39fK5hs2l2g_h7mCuItiRAhH4w99ROjMs0=s516-k-no",
+            descripcion: "Lugar donde alquiló un cuarto; jugaba vóley en la losa deportiva los domingos."
+        },
+        {
+            nombre: "Colegio Santo Toribio",
+            coords: [-6.7575992, -79.8633411],
+            imagen: "https://lh3.googleusercontent.com/p/AF1QipO0Z5swNsOwjAFmK5D4z7iaYMbGKMankJ7Kk9if=s551-k-no",
+            descripcion: "Organizó una biblioteca móvil; graduó tres promociones como padrino."
+        },
+        {
+            nombre: "Café Trébol",
+            coords: [-6.772026, -79.8390852],
+            imagen: "../img/pan.png",
+            descripcion: "Su parada obligada: “Café pasado y pan con chicharrón”; dueña muestra foto autografiada colgada en el local."
+        }
+    ];
+
+    const menu = document.getElementById("menu");
+
+    // Crear marcadores y menú
+    lugares.forEach((lugar) => {
+        const marker = L.marker(lugar.coords)
+        .addTo(map)
+        .bindPopup(`
+            <strong>${lugar.nombre}</strong>
+            <img src="${lugar.imagen}" width="100%"><br>
+            <small>${lugar.descripcion}</small>
+        `);
+
+        const btn = document.createElement("button");
+        btn.textContent = lugar.nombre;
+        btn.onclick = () => {
+            map.flyTo(lugar.coords, 14);
+            marker.openPopup();
+
+            // Oculta el menú si está en móvil
+            if (window.innerWidth < 768) {
+                document.getElementById("menu").style.display = "none";
+            }
+        };
+        menu.appendChild(btn);
+    });
+
+    // Función para mostrar/ocultar menú en móvil
+    function toggleMenu() {
+        const menuEl = document.getElementById("menu");
+        menuEl.style.display = (menuEl.style.display === "block") ? "none" : "block";
+    }
+    </script>
+    
+    <!-- animaciones -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var controller = new ScrollMagic.Controller();
+
+        new ScrollMagic.Scene({
+            triggerElement: "#testimonio-1", 
+            triggerHook: 0.9, 
+            reverse: true 
+        })
+        .setClassToggle("#testimonio-1", "animate-in") 
+        .addTo(controller);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#testimonio-2", 
+            triggerHook: 0.9, 
+            reverse: true 
+        })
+        .setClassToggle("#testimonio-2", "animate-in-left") 
+        .addTo(controller);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#testimonio-3", 
+            triggerHook: 0.9, 
+            reverse: true 
+        })
+        .setClassToggle("#testimonio-3", "animate-up") 
+        .addTo(controller);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#testimonio-4", 
+            triggerHook: 0.9, 
+            reverse: true 
+        })
+        .setClassToggle("#testimonio-4", "animate-in") 
+        .addTo(controller);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#testimonio-5", 
+            triggerHook: 0.9, 
+            reverse: true 
+        })
+        .setClassToggle("#testimonio-5", "animate-in-left") 
+        .addTo(controller);
+
+        // animaciones galeria
+        new ScrollMagic.Scene({
+            triggerElement: "#foto-galeria-1", 
+            triggerHook: 0.9, 
+            reverse: true 
+        })
+        .setClassToggle("#foto-galeria-1", "animate-up") 
+        .addTo(controller);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#foto-galeria-2", 
+            triggerHook: 0.9, 
+            reverse: true 
+        })
+        .setClassToggle("#foto-galeria-2", "animate-in") 
+        .addTo(controller);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#foto-galeria-3", 
+            triggerHook: 0.9, 
+            reverse: true 
+        })
+        .setClassToggle("#foto-galeria-3", "animate-in-left") 
+        .addTo(controller);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#foto-galeria-4", 
+            triggerHook: 0.9, 
+            reverse: true 
+        })
+        .setClassToggle("#foto-galeria-4", "animate-in") 
+        .addTo(controller);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#foto-galeria-5", 
+            triggerHook: 0.9, 
+            reverse: true 
+        })
+        .setClassToggle("#foto-galeria-5", "animate-in-left") 
+        .addTo(controller);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#foto-galeria-6", 
+            triggerHook: 0.9, 
+            reverse: true 
+        })
+        .setClassToggle("#foto-galeria-6", "animate-up") 
+        .addTo(controller);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#foto-galeria-7", 
+            triggerHook: 0.9, 
+            reverse: true 
+        })
+        .setClassToggle("#foto-galeria-7", "animate-up") 
+        .addTo(controller);
+    });
+    </script>
+
+    
+</body>
+</html>

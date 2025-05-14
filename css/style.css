@@ -1,0 +1,570 @@
+.clear{
+    clear: both;
+}
+
+body, html {    
+    margin: 0;    
+    padding: 0;    
+    font-style: normal;
+    font-display: swap;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'actobook';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-book-webfont.woff2') format('woff2'),
+         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-book-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'actosemibold';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-semibold-webfont.woff2') format('woff2'),
+         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-semibold-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'actobold';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-bold-webfont.woff2') format('woff2'),
+         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-bold-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'actoextrabold_italic';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-extrabold_italic-webfont.woff2') format('woff2'),
+         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-extrabold_italic-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'Chronicle Display Light Italic';
+    src: url('https://nuevasnarrativasec.github.io/conclave/fonts/ChronicleDisplay-LightItalic.woff2') format('woff2'),
+        url('https://nuevasnarrativasec.github.io/conclave/fonts/ChronicleDisplay-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Chronicle Display Semibold Italic';
+    src: url('https://nuevasnarrativasec.github.io/conclave/fonts/ChronicleDisplay-SemiItalic.woff2') format('woff2'),
+        url('https://nuevasnarrativasec.github.io/conclave/fonts/ChronicleDisplay-SemiItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Chronicle Display Bold Italic';
+    src: url('https://nuevasnarrativasec.github.io/conclave/fonts/ChronicleDisplay-BoldItalic.woff2') format('woff2'),
+        url('https://nuevasnarrativasec.github.io/conclave/fonts/ChronicleDisplay-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Chronicle Display Black';
+    src: url('https://nuevasnarrativasec.github.io/conclave/fonts/ChronicleDisplay-Black.woff2') format('woff2'),
+        url('https://nuevasnarrativasec.github.io/conclave/fonts/ChronicleDisplay-Black.woff') format('woff');
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'Chronicle Display Black Italic';
+    src: url('https://nuevasnarrativasec.github.io/conclave/fonts/ChronicleDisplay-BlackItalic.woff2') format('woff2'),
+        url('https://nuevasnarrativasec.github.io/conclave/fonts/ChronicleDisplay-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+#header{
+    margin-bottom: 50px;
+    width: 100%;
+}
+    .header-comercio{   
+        background: #000;    
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 9999999;
+    }
+        .ctn-header-comercio{
+            margin: 0 auto;     
+            max-width: 1024px;
+            padding: 0 5px;
+            text-align: right;
+        }
+            .ctn-header-comercio a{
+                display: inline-block;                
+                text-indent: -9999px;
+            }
+                a.logo-comercio{
+                    background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/somos-35-anos-mejores-portadas-ecpm/img/logo-comercio.png?v2) no-repeat 0 0;
+                    background-size: 100%;
+                    display: none;
+                    height: 30px;
+                    margin-top: 10px;
+                    width: 110px;
+                }
+                #social{
+                        float: right;
+                        margin: 20px;
+                        position: absolute;
+                        right: 0;
+                        z-index: 600;
+                }
+                #social ul{
+                    display: inline-block;
+                    margin: 0 auto;
+                    padding: 0;
+                    vertical-align: middle;
+                }
+                    #social ul li{
+                        display: inline-block;
+                        margin: 0 3px;
+                        vertical-align: middle;
+                    }
+                        #social ul li a{
+                            height: 36px;
+                            width: 36px;
+                        }
+                        #fb{
+                            background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/abuso-infantil/img/fb-icon-negro.png?v2) no-repeat 0 0;
+                            background-size: 100% !important;
+                            border: none;
+                            display: inline-block;
+                            height: 36px;
+                            text-indent: -9999px;
+                            width: 36px;
+                        }
+                        #wst{                
+                            background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/abuso-infantil/img/wsp-icon-negro.png?v2) no-repeat 0 0 !important;
+                            background-size: 100% !important;
+                            border: none;
+                            display: none;
+                            height: 36px;
+                            text-indent: -9999px;
+                            width: 36px;
+                        }
+                        #tw{            
+                            background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/abuso-infantil/img/tw-icon-negro.png?v2) no-repeat 0 0 !important;
+                            background-size: 100% !important;
+                            border: none;
+                            display: inline-block;
+                            height: 36px;
+                            text-indent: -9999px;
+                            width: 36px;
+                        } 
+#portada{
+    background: url('../img/bg-portada-2.jpg') no-repeat center bottom;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+    .papa-gif{
+        bottom: 0;
+        left: 50%;
+        max-width: 700px;
+        position: absolute;
+        transform: translate(-70%);
+    }
+    .sombra-portada{
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+    }
+    .box-titulo{
+        bottom: 50px;
+        position: absolute;
+        width: 100%;
+        z-index: 5;
+    }
+        img.logo-comercio{
+            display: block;
+            margin: 0 auto 5px;
+            max-width: 150px;
+        }
+        .box-titulo h1{
+            color: #fff;
+            font: 6rem/1.1 'Chronicle Display Black Italic';
+            margin: 0 auto;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .box-titulo h2{
+            color: #fff;
+            font: 2rem/1.2 'Chronicle Display Light Italic';
+            margin: 0 auto;
+            text-align: center;
+        }
+            .box-titulo h2 span{
+                color: #fff;
+            }
+        img.flecha-bajar{
+            cursor: pointer;
+            display: block;
+            margin: 40px auto 0;
+            max-width: 50px;
+        }
+#main{
+    
+}
+    .box-bajada{
+        background-color: #000;
+        margin-bottom: 70px;
+        padding: 50px 0;
+        text-align: center;
+    }
+        .box-bajada span.separador{
+            background: #fff;
+            display: block;
+            height: 1px;
+            margin: 0 auto;
+            max-width: 200px;
+        }
+        .box-bajada h3{
+            color: #fff;
+            font: 1.1rem/1.6 'actobook';
+            margin: 0 auto;
+            max-width: 530px;
+            padding: 40px 0;
+            text-align: center;
+        }
+            .box-bajada h3 span{
+                color: #A68939;
+            }
+    .box-texto{
+        margin: 0 auto;
+        max-width: 570px;
+    }
+        .box-texto span.separador{
+            background: #c2c2c2;
+            display: block;
+            margin: 10px auto 30px;
+            max-width: 150px;
+            height: 1px;
+        }
+        .box-texto h4{
+            color: #A68939;
+            font: 1.8rem/1.2 'Chronicle Display Semibold Italic';
+            margin: 15px auto;
+            text-align: center;
+        }
+        .box-texto p{
+            font: 1.1rem/1.6 'actobook';
+            margin: 30px auto;
+            max-width: 510px;
+        }
+    .main-fotos-testimonios{
+        margin: 0 auto;
+        max-width: 930px;     
+        padding: 50px 0;   
+        text-align: center;
+    }   
+        .box-testimonio{
+            box-sizing: border-box;
+            display: inline-block;
+            margin: 20px 30px 50px;
+            max-width: 400px;
+            vertical-align: top;
+        }
+            .box-testimonio img{
+                width: 100%;
+            }
+            .box-texto-testimonio{
+                text-align: left;
+            }
+                .box-texto-testimonio h5{
+                    color: #A68939;
+                    font: 1.3rem/1.1 'actobold';
+                    margin: 20px auto;
+                    text-transform: uppercase;
+                }
+                    .box-texto-testimonio h5 span{
+                        color: #000;
+                        display: block;
+                    }
+                .box-texto-testimonio p{
+                    font: 1.3rem/1.5 'Chronicle Display Semibold Italic';
+                    margin: 15px auto;
+                }
+                .box-texto-testimonio h6{
+                    color: #A68939;
+                    font: 1.2rem/1.3 'Chronicle Display Black Italic';
+                    margin: 0 auto;
+                    text-transform: uppercase;
+                }
+            .horizontal{
+                max-width: 780px;
+            }
+                .horizontal .box-texto-testimonio{
+                    display: inline-block;
+                    max-width: 380px;
+                    padding: 80px 30px 0 0;
+                    vertical-align: top;
+                }
+                .horizontal img{
+                    display: inline-block;
+                    max-width: 350px;
+                    vertical-align: top;
+                }
+            #testimonio-1,
+            #testimonio-4,
+            #foto-galeria-2,
+            #foto-galeria-4{
+                opacity: 0;
+                transform: translateX(-50px);
+                transition: transform 1s ease-out, opacity 1s ease-out;
+            }
+                #testimonio-1.animate-in,
+                #testimonio-4.animate-in,
+                #foto-galeria-2.animate-in,
+                #foto-galeria-4.animate-in {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            #testimonio-2,
+            #testimonio-5,
+            #foto-galeria-3,
+            #foto-galeria-5{
+                opacity: 0;
+                transform: translateX(50px);
+                transition: transform 1s ease-out, opacity 1s ease-out;
+            }
+                #testimonio-2.animate-in-left,
+                #testimonio-5.animate-in-left,
+                #foto-galeria-3.animate-in-left,
+                #foto-galeria-5.animate-in-left {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            #testimonio-3,
+            #foto-galeria-1,
+            #foto-galeria-6,
+            #foto-galeria-7{
+                opacity: 0;
+                transform: translateY(-50px);
+                transition: transform 1s ease-out, opacity 1s ease-out;
+            }
+                #testimonio-3.animate-up,
+                #foto-galeria-1.animate-up,
+                #foto-galeria-6.animate-up,
+                #foto-galeria-7.animate-up {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+
+    img.bg{
+        display: block;
+        margin: 20px auto 80px;
+        max-width: 520px;
+    }
+    img.bg-retos{
+        display: block;
+        margin: 20px auto 80px;
+        max-width: 700px;
+    }
+    .box-main-galeria{
+        box-sizing: border-box;
+        margin: 20px auto;
+        max-width: 900px;
+        text-align: center;
+    }
+        .foto-galeria{
+            display: inline-block;
+            margin: 20px;
+            vertical-align: top;
+        }
+            .foto-galeria p{
+                font: 1rem/1.3 'actobook';
+                margin: 10px auto;
+                text-align: left;
+            }
+        .medium{
+            max-width: 400px;
+            text-align: left;
+        }
+        .foto-galeria:nth-child(3) img{
+            max-width: 92%;
+        }
+        .foto-galeria:nth-child(4){
+            text-align: right;
+        }
+            .foto-galeria:nth-child(4) img{
+                max-width: 82%;
+            }
+        .foto-galeria:nth-child(5) p{
+            margin: 0 auto 20px;
+        }
+        .foto-galeria:nth-child(5) img{
+            margin: 0 auto 20px;
+        }
+    .timeline-container {    
+        margin: 0 auto;   
+        max-width: 1102px;
+    }
+        img.timeline-desktop{
+            display: block;
+            margin: 0 auto;
+        }   
+        img.timeline-movil{
+            display: none;
+        } 
+    .box-leon{
+        margin: 0 auto 60px;
+        max-width: 900px;        
+        text-align: center;
+    }
+        .box-leon h5{
+            background-color: #A68939;
+            color: #fff;
+            display: inline-block;
+            font: 2rem/1.2 'Chronicle Display Black Italic'; 
+            margin: 10px auto;
+            padding: 10px 20px; 
+            text-align: center; 
+        }
+        .box-leon p{
+            font: 1.1rem/1.6 'actobook';
+            text-align: center;
+        }
+            .box-leon p span{
+                font-family: 'actobold';
+            }
+
+
+
+
+    .main-map{
+        height: 600px;
+        margin: 60px auto;
+        max-width: 1200px;
+        position: relative;
+    }
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+        .menu-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+        }
+        .hamburger {
+            background: white;
+            border: none;
+            display: none;
+            font-size: 24px;
+            padding: 6px 10px;
+            border-radius: 6px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+            cursor: pointer;
+        }
+        .menu {
+            display: block;
+            margin-top: 10px;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            font-family: sans-serif;
+        }
+            .menu button {
+                font: .9rem / 1.3 'actobook';
+                display: block;
+                margin-bottom: 5px;
+                width: 100%;
+                padding: 6px;
+                cursor: pointer;
+                text-align: left;
+                border: 1px solid #a68939;
+                background: #fff;
+                border-radius: 5px;
+            }   
+                .menu button:hover{
+                    background: #a68939;
+                    color: #fff;
+                }   
+        .leaflet-popup-content strong{
+            color: #A68939;
+            display: block;
+            font: 1.2rem / 1.2 'Chronicle Display Semibold Italic';
+            margin-bottom: 10px;
+        }
+        .leaflet-popup-content small{
+            font: .9rem/1.3 'actobook';
+        }     
+    
+    ul.creditos{
+        border-top: 1px solid #c2c2c2;
+        list-style-type: none;
+        margin: 0 auto;
+        max-width: 900px;
+        padding: 40px 0 0;
+        text-align: center;
+    }
+        ul.creditos li{
+            margin: 0 auto;
+        }
+            ul.creditos li p{
+                font: 1rem/1.3 'actobook';
+                padding: 0 0 10px;
+            }
+                ul.creditos li p span{
+                    display: block;
+                    font-family: 'actobold';
+                }   
+
+
+
+@media (max-width: 640px) {
+
+    #wst{
+        display: inline-block;
+    }
+    #portada{
+        background: url('../img/bg-portada-movil.jpg') no-repeat center bottom;
+        background-size: cover;
+    }
+    .papa-gif{
+        width: 500px;
+        transform: translate(-60%);
+    }
+    .box-titulo h1{
+        font-size: 2.5rem;
+    }
+    .box-titulo h2{
+        font-size: 1.5rem;
+    }    
+    .box-bajada h3{
+        padding: 40px 20px;
+    }
+    .box-texto{
+        padding: 0 20px;
+    }
+    #main{
+        overflow: hidden;
+    }
+    .horizontal .box-texto-testimonio{
+        padding: 0;
+    }
+    .horizontal img{
+        margin-top: 20px;
+    }
+    .foto-galeria:nth-child(3) img,
+    .foto-galeria:nth-child(4) img {
+        max-width: 100%;
+    }
+    img.bg{
+        max-width: 90%;
+    }
+    .menu-container{
+        text-align: right;
+    }
+    .menu {
+        display: none;
+    }
+    .hamburger {
+        display: inline-block;
+        
+    }
+    img.timeline-desktop{
+        display: none;
+    }   
+    img.timeline-movil{
+        display: block;
+    } 
+
+}
