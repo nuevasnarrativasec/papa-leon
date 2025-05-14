@@ -530,7 +530,7 @@ body, html {
         display: inline-block;
     }
     #portada{
-        background: url('../img/bg-portada-movil.jpg') no-repeat center bottom;
+        background: url('https://nuevasnarrativasec.github.io/papa-leon/img/bg-portada-movil.jpg') no-repeat center bottom;
         background-size: cover;
     }
     .papa-gif{
